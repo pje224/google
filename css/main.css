@@ -12,3 +12,76 @@ a {
   color: #333;
   text-decoration: none;
 }
+/* nav */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+nav > a {
+  color: rgba(0, 0, 0, 0.87);
+}
+.nav-icon {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.navicon-a {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  opacity: 0.6;
+}
+.navicon-a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.navicon-a::before {
+  content: attr(aria-label); /* attr은 적용한 속성을 넣기 */
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 7px;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap; /* 글자 줄바꿈 방지 */
+  opacity: 0;
+}
+#login {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 3px;
+  background-color: #4484f3;
+  color: #fff;
+}
+/* nav hover */
+nav > a:hover {
+  text-decoration: underline rgba(0, 0, 0, 0.87);
+}
+/* hover와 after/before은 함께 쓸 때에는 띄워쓰기 XXX */
+.navicon-a:hover::after {
+  opacity: 1;
+}
+.navicon-a:hover::before {
+  opacity: 1;
+}
+#login:hover {
+  background-color: #166afc;
+  cursor: pointer;
+}

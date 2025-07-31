@@ -12,13 +12,23 @@ a {
   color: #333;
   text-decoration: none;
 }
+/* 스크롤 생성(nav 고정 확인용) */
+body {
+  height: 1500px;
+}
 /* nav */
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 20px;
   padding: 20px;
+  z-index: 99;
+  background-color: #fff;
 }
 nav > a {
   color: rgba(0, 0, 0, 0.87);
@@ -92,7 +102,8 @@ nav > a:hover {
   width: 70%;
   max-width: 1280px;
   min-width: 390px;
-  margin: 100px auto;
+  margin: auto;
+  padding-top: 171px;
   display: flex;
   flex-direction: column;
   align-items: center;

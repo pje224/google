@@ -138,7 +138,7 @@ nav > a:hover {
 }
 /* 검색 리스트 */
 .search-plus {
-  width: 60%;
+  width: 70%;
   max-width: 600px;
   min-width: 200px;
   /* background-color: #4484f3; */
@@ -206,4 +206,26 @@ nav > a:hover {
 }
 .search-plus li:hover .hover_bg img {
   opacity: 1;
+}
+/* 검색 버튼 */
+.search-btn {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 50%;
+  /* background-color: aliceblue; */
+}
+.search-btn button {
+  padding: 7px 15px;
+  /* border: 1px solid #f8f9fa00; */
+  border: 0;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #333;
+}
+.search-btn button:hover {
+  /* border: 1px solid #e4e4e4; */
+  background: linear-gradient(to bottom, #ffffff 0%, #f6f6f6 47%, #ededed 100%);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }

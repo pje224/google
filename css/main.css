@@ -97,7 +97,7 @@ nav > a:hover {
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
 }
 .g-logo {
   width: 50%;
@@ -188,7 +188,7 @@ nav > a:hover {
   left: 0;
   display: block;
   width: 100%;
-  height: 110px;
+  height: 115px;
   background-color: rgba(0, 0, 0, 0.15);
   opacity: 0;
   transition: all 0.3s;
@@ -196,8 +196,14 @@ nav > a:hover {
 .hover_bg img {
   position: absolute;
   top: 5px;
-  right: 5px;
+  right: 0;
+  opacity: 0;
+  transition: all 1s;
+  transition-delay: 0.3s;
 }
 .search-plus li:hover .hover_bg {
+  opacity: 1;
+}
+.search-plus li:hover .hover_bg img {
   opacity: 1;
 }

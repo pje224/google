@@ -88,7 +88,25 @@ nav > a:hover {
   cursor: pointer;
 }
 /* 메인 */
+.main-wrap {
+  width: 70%;
+  max-width: 1280px;
+  min-width: 390px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  background-color: aliceblue;
+}
+.g-logo {
+  width: 50%;
+  max-width: 250px;
+  min-width: 180px;
+  /* margin: auto; */
+}
 .search_bar {
+  width: 100%;
   max-width: 746px;
   min-width: 337px;
   height: 48px;
@@ -117,4 +135,48 @@ nav > a:hover {
 .search-icon img {
   /* width: 100%; */
   width: 26px;
+}
+/* 검색 리스트 */
+.search-plus {
+  width: 60%;
+  max-width: 600px;
+  min-width: 200px;
+  /* background-color: #4484f3; */
+}
+.search-plus ul {
+  display: flex;
+}
+.search-plus ul li {
+  width: calc(100% / 5);
+  /* background-color: steelblue; */
+}
+.search-plus ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.bg {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.bg img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.search-plus ul li a span {
+  font-size: 14px;
+  /* 말줄임 표시 */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100px;
 }

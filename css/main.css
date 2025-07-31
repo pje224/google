@@ -147,6 +147,7 @@ nav > a:hover {
   display: flex;
 }
 .search-plus ul li {
+  position: relative;
   width: calc(100% / 5);
   /* background-color: steelblue; */
 }
@@ -178,5 +179,25 @@ nav > a:hover {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  max-width: 100px;
+  max-width: 85px;
+}
+/* 호버 했을 때 나오는 배경 */
+.hover_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 110px;
+  background-color: rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.hover_bg img {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.search-plus li:hover .hover_bg {
+  opacity: 1;
 }

@@ -36,6 +36,10 @@ body {
   color: #888;
   /* font-size: 15px; */
 }
+/* input 태그에 클릭 했을 때 placeholder 글씨가 없어지도록 하는 */
+input:focus::placeholder {
+  color: transparent;
+}
 button {
   border: 0;
   padding: 10px;

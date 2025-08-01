@@ -44,6 +44,7 @@ button {
   border: 0;
   padding: 10px;
   border-radius: 3px;
+  cursor: pointer;
 }
 /* 대괄호 안에 type의 속성값을 입력 > 그 속성을 가진 버튼에만 css적용  */
 button[type="submit"] {
